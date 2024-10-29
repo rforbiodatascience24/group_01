@@ -16,8 +16,10 @@ Authors@R:
            role = "aut",
            email = "your@email.com"))
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: A package for handling typical task when dealing with the central
-dogma of molecular biology
+Description: A package for handling typical task when dealing with the central dogma of molecular biology
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.3
