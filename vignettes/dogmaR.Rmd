@@ -1,0 +1,40 @@
+---
+title: "dogmaR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dogmaR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+https://github.com/rforbiodatascience24/group_01_package
+
+dogmaR is a an R package for dealing with biological sequences and their common transformations in the context of the central dogma of molecular biology. That is the processes replicating DNA, transcribing it into RNA and translating it into amino acids
+
+# Making DNA
+
+Often you, the user, would have a particular sequence of interest but in case you do not, dogmaR can generate a random one for you using the make_DNA command. To use it you simply specify the number of bases you would like as as shown in the example below:
+
+```{make_DNA}
+library(dogmaR)
+make_DNA(12)
+[1] "ATCCAATCCACT"
+```
+# Transcribing RNA
+The first step of converting the genetic information stored in DNA into molecules that act is transcribing the DNA into RNA. To simulate this process, where thymidin is replaced by uracil in the sequence you can use the dna_to_rna function as shown in the example below:
+
+```{make_DNA}
+library(dogmaR)
+dna_to_rna("ATCCAATCCACT")
+[1] "AUCCAAUCCACU"
+```
+
+# Translating RNA to Proteins
+
+
