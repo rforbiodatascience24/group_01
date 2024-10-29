@@ -3,6 +3,7 @@
 #' @param Sequence Input of the function is the sequence you would like to analyze
 #'
 #' @return It will output a plot with the character counts
+#' @import ggplot2
 #' @export
 #'
 #' @examples plot_seq_composition("AGTGTAA")
